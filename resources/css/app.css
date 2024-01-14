@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*** NAVBAR ***/
+nav {
+    @apply flex justify-center bg-white shadow-sm border-b
+}
+
+body {
+    @apply bg-slate-50
+}
+
+.nav-container {
+    @apply flex px-6 py-3 justify-between items-center max-w-screen-2xl w-full
+}
+
+nav .logo {
+    @apply text-xl font-bold
+}
+
+nav .links {
+    @apply flex space-x-2 p-2 rounded-2xl bg-slate-50
+}
+
+nav .links a {
+    @apply px-3 py-1 text-gray-800 rounded-xl hover:bg-slate-100
+}
+
+nav .links .active {
+    @apply bg-slate-200 text-gray-900 hover:bg-slate-200
+}
+
+.btn-logout {
+    @apply text-center px-4 py-2 bg-orange-500 text-white rounded-xl hover:bg-orange-600
+}
+
+/* home page nav */
+nav .home-links {
+    @apply flex space-x-2 p-1
+}
+
+nav .home-links a {
+    @apply text-center px-4 py-2 rounded-xl
+}
+
+.btn-register {
+    @apply bg-green-400
+}
+
+.btn-login {
+    @apply text-center px-4 py-2 bg-teal-500 text-white rounded-xl hover:bg-teal-600
+}
+
+.btn-red {
+    @apply bg-red-300/50 px-3 py-1 rounded-lg hover:bg-red-300
+}
+/* end home page nav */
+
+/* END NAVBAR */
+
+/*** MAIN [to be wrapped around main content] ***/
+
+main {
+    @apply flex justify-center max-w-screen-2xl w-full py-4 mx-auto
+}
+
+body {
+    @apply bg-slate-50
+}
+
+/* END MAIN */
+
+/*** TABLE ***/
+.table-container {
+    @apply flex flex-col space-y-3 border rounded-xl p-4 text-center text-slate-800 bg-white
+}
+
+.table-container h1 {
+    @apply text-xl font-bold
+}
+
+table {
+    @apply text-left bg-slate-100 rounded-lg
+}
+
+th {
+    @apply px-4 py-2 border-b
+}
+
+tbody {
+    @apply divide-slate-100
+}
+
+td {
+    @apply py-2 px-4 bg-white/50
+}
+
+td a {
+    @apply bg-green-300/50 px-3 py-1 rounded-xl hover:bg-green-300
+}
+
+.no-records td {
+    @apply text-center p-4 text-teal-800 w-fit
+}
+
+.no-records p .pending {
+    @apply text-center py-2 bg-green-300/20 rounded-lg
+}
+
+.no-records p .active {
+    @apply text-center py-2 bg-gray-50/20 rounded-lg
+}
+
+/* END TABLE */
+
+/*** COMPONENTS ***/
+
+.text-input {
+    @apply bg-white rounded-md py-2 px-3 w-full border border-cyan-400
+}
+
+.tabs {
+    @apply flex rounded-2xl p-2 bg-white shadow space-x-2
+}
+
+.tabs .tab {
+    @apply rounded-xl bg-slate-100/40 text-slate-700 py-1.5 px-3 text-center hover:bg-slate-200/40
+}
+
+.tabs .active {
+    @apply bg-slate-200/50 text-slate-800 hover:bg-slate-200/50
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.container-2 {
+    @apply bg-white p-4 rounded-xl w-full
+}
+
+.btn-green {
+    @apply bg-green-300/50 px-3 py-1 rounded-lg hover:bg-green-300
+}
+
+.btn-white {
+    @apply bg-slate-50 border hover:bg-white px-3 py-1 rounded-lg
+}
+
+.nav-box {
+    @apply flex p-1 border rounded-xl justify-center items-center space-x-3
+}
+
+.btn-nav {
+    @apply bg-slate-50 border hover:bg-white px-3 py-1 rounded-lg
+}
+
+.btn-teal-lg {
+    @apply flex text-white font-bold bg-teal-500 px-4 py-1 rounded-lg hover:bg-teal-500/90 justify-center items-center
+}
+
+.btn-orange {
+    @apply bg-orange-300/50 px-3 py-1 rounded-lg hover:bg-orange-300
+}
+
+.btn-orange-disabled {
+    @apply bg-gray-300/50 px-3 py-1 rounded-lg
+}
+
+.btn-teal {
+    @apply bg-teal-300/50 px-3 py-1 rounded-lg hover:bg-teal-300
+}
+
+.btn-cancel {
+    @apply bg-red-300/50 px-3 py-1 rounded-lg hover:bg-red-300
+}
+
+.btn-lg {
+    @apply bg-slate-50 border hover:bg-white px-3 py-2 rounded-lg
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/*** END COMPONENTS ***/
+
+
+
+
